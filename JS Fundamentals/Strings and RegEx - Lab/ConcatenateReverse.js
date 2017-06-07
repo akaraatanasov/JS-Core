@@ -1,0 +1,1 @@
+(stringArr) => Array.from(stringArr.join('')).reverse().join('');
