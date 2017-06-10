@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c48f40a8-4bd7-40c1-a174-caa84f88fa4b" name="Default" comment="" />
+    <list default="true" id="fbc85aaf-bcc9-4326-a3d2-0223206b2b3c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,7 +14,18 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UniqueSequences.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UniqueSequences.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="3" lean-forward="false" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,24 +34,17 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TownsJSON.js" />
-        <option value="$PROJECT_DIR$/ScoreHTML.js" />
-        <option value="$PROJECT_DIR$/JSONhtml.js" />
-        <option value="$PROJECT_DIR$/SumTowns.js" />
-        <option value="$PROJECT_DIR$/CountWords.js" />
-        <option value="$PROJECT_DIR$/WordsCount.js" />
-        <option value="$PROJECT_DIR$/Population.js" />
-        <option value="$PROJECT_DIR$/UniqueWords.js" />
-        <option value="$PROJECT_DIR$/CityMarkets.js" />
-        <option value="$PROJECT_DIR$/LowestPrices.js" />
+        <option value="$PROJECT_DIR$/HeroicInventory.js" />
+        <option value="$PROJECT_DIR$/JSONsTable.js" />
+        <option value="$PROJECT_DIR$/CappyJuice.js" />
+        <option value="$PROJECT_DIR$/StoreCatalogue.js" />
+        <option value="$PROJECT_DIR$/AutoCompany.js" />
+        <option value="$PROJECT_DIR$/SystemComponents.js" />
+        <option value="$PROJECT_DIR$/Usernames.js" />
+        <option value="$PROJECT_DIR$/UniqueSequences.js" />
       </list>
     </option>
   </component>
@@ -51,9 +55,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="27" />
-    <option name="width" value="838" />
+    <option name="x" value="849" />
+    <option name="y" value="29" />
+    <option name="width" value="830" />
     <option name="height" value="1014" />
   </component>
   <component name="ProjectView">
@@ -71,22 +75,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JSON and Assoc Arrays - Lab" />
+              <option name="myItemId" value="JSON and Assoc Arrays - Exercise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JSON and Assoc Arrays - Lab" />
+              <option name="myItemId" value="JSON and Assoc Arrays - Exercise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -109,20 +113,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.LowestPrices.js">
-    <configuration default="false" name="WordsCount.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="WordsCount.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.UniqueSequences.js">
+    <configuration default="false" name="HeroicInventory.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="HeroicInventory.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="Population.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="Population.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="AutoCompany.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="AutoCompany.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="CityMarkets.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="CityMarkets.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="SystemComponents.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="SystemComponents.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="UniqueWords.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="UniqueWords.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="Usernames.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="Usernames.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="LowestPrices.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="LowestPrices.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="UniqueSequences.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="UniqueSequences.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -192,19 +196,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.WordsCount.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.Population.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.CityMarkets.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.UniqueWords.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.LowestPrices.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.HeroicInventory.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.AutoCompany.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.SystemComponents.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.Usernames.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.UniqueSequences.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.LowestPrices.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.UniqueWords.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.CityMarkets.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.Population.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.WordsCount.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.UniqueSequences.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.Usernames.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.SystemComponents.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.AutoCompany.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.HeroicInventory.js" />
       </list>
     </recent_temporary>
   </component>
@@ -216,25 +220,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c48f40a8-4bd7-40c1-a174-caa84f88fa4b" name="Default" comment="" />
-      <created>1496936499148</created>
+      <changelist id="fbc85aaf-bcc9-4326-a3d2-0223206b2b3c" name="Default" comment="" />
+      <created>1497047861938</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1496936499148</updated>
-      <workItem from="1496936500471" duration="3876000" />
-      <workItem from="1497044105002" duration="333000" />
-      <workItem from="1497044468998" duration="3182000" />
-      <workItem from="1497047836907" duration="652000" />
+      <updated>1497047861938</updated>
+      <workItem from="1497047863506" duration="2548000" />
+      <workItem from="1497090086189" duration="1298000" />
+      <workItem from="1497107610139" duration="31000" />
+      <workItem from="1497107684132" duration="1494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8043000" />
+    <option name="totallyTimeSpent" value="5371000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="27" width="838" height="1014" extended-state="0" />
+    <frame x="849" y="29" width="830" height="1014" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22553699" sideWeight="0.49346405" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33614457" sideWeight="0.49346405" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19788359" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -268,87 +273,78 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Population.js">
+    <entry file="file://$PROJECT_DIR$/SystemComponents.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Population.js">
+    <entry file="file://$PROJECT_DIR$/SystemComponents.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TownsJSON.js">
+    <entry file="file://$PROJECT_DIR$/HeroicInventory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSONhtml.js">
+    <entry file="file://$PROJECT_DIR$/JSONsTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="31" column="101" lean-forward="false" selection-start-line="31" selection-start-column="101" selection-end-line="31" selection-end-column="101" />
+        <state relative-caret-position="420">
+          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoreHTML.js">
+    <entry file="file://$PROJECT_DIR$/StoreCatalogue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="465">
+          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SumTowns.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WordsCount.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Population.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CountWords.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LowestPrices.js">
+    <entry file="file://$PROJECT_DIR$/CappyJuice.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UniqueWords.js">
+    <entry file="file://$PROJECT_DIR$/AutoCompany.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        <state relative-caret-position="540">
+          <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CityMarkets.js">
+    <entry file="file://$PROJECT_DIR$/SystemComponents.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usernames.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UniqueSequences.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="3" lean-forward="false" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
