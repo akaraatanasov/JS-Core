@@ -19,45 +19,30 @@ function rosetta(input) {
         templateNum.push(el.split(' ').map(Number));
     }
 
-    for (let rows = 0; rows < matrix.length; rows++) {
-        for (let cols = 0; cols < matrix[rows].length; cols++) {
-            let num;
-
-            if (rows % 2 === 0 && cols % 2 === 0) {
-                num = matrix[rows][cols] + templateNum[0][0];
-            } else if (rows % 2 === 0 && cols % 2 === 1) {
-                num = matrix[rows][cols] + templateNum[0][1];
-            } else if (rows % 2 === 1 && cols % 2 === 0) {
-                num = matrix[rows][cols] + templateNum[1][0];
-            } else if (rows % 2 === 1 && cols % 2 === 1) {
-                num = matrix[rows][cols] + templateNum[1][1];
-            }
-
-            while (num > 26) {
-                num -= 27;
-            }
-
-            matrix[rows][cols] = num;
-        }
-    }
-
     let result = '';
-
     for (let rows = 0; rows < matrix.length; rows++) {
         for (let cols = 0; cols < matrix[rows].length; cols++) {
             let current = matrix[rows][cols];
-            if (current > 0 && current <= 26) {
-                result += String.fromCharCode(current + 64);
-            } else {
-                result += ' ';
-            }
+            let modifier = templateNum[rows % templateNum.length][cols % templateNum[0].length];
+            result += String.fromCharCode(((current + modifier) % 27) + 64);
         }
     }
 
+    result = result.replace(/@/g, ' ');
     console.log(result.trim());
 }
 
-function solve(input) {
+rosetta([
+    '2',
+    '31 32',
+    '74 37',
+    '19 0 23 25',
+    '22 3 12 17',
+    '5 9 23 11',
+    '12 18 10 22'
+]);
+
+function author(input) {
     // Get size of code
     let n = Number(input.shift());
 
@@ -87,13 +72,3 @@ function solve(input) {
     result = result.replace(/@/g, ' ');
     console.log(result);
 }
-
-rosetta([
-    '2',
-    '31 32',
-    '74 37',
-    '19 0 23 25',
-    '22 3 12 17',
-    '5 9 23 11',
-    '12 18 10 22'
-]);
