@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Textbox</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
@@ -14,8 +14,24 @@
     class Textbox {
         constructor(selector, regex) {
             this._elements = $(selector);
-            this._value = $(this._elements[0]).val();
+            this.value = $(this._elements[0]).val();
             this._invalidSymbols = regex;
+            this.onInput();
+        }
+
+        onInput() {
+            let that = this;
+            this.elements.on('input', function () {
+                let text = $(this).val();
+                that.value = text;
+            });
+
+            /* - another way without that (using arrow function)
+            this.elements.on('input', (event) => {
+                let text = $(event.target).val();
+                this.value = text;
+            });
+            */
         }
 
         get elements() {
@@ -34,15 +50,16 @@
         }
 
         isValid() {
-            return this.
+            return !this._invalidSymbols.test(this.value);
         }
     }
 
     let textbox = new Textbox(".textbox",/[^a-zA-Z0-9]/);
     let inputs = $('.textbox');
 
-    inputs.on('input',function(){console.log(textbox.value);});
-
+    inputs.on('input',function() {
+        console.log(textbox.value);
+    });
 </script>
 </body>
 </html>

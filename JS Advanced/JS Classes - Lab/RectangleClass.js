@@ -6,6 +6,6 @@ class Rectange {
     }
 
     calcArea() {
-        return this.width * this.height;
+        return (this.width * this.height);
     }
 }
