@@ -1,0 +1,20 @@
+{
+  "name": "unittest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ArmageDOM.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  },
+  "dependencies": {
+    "chai": "^4.1.0",
+    "jquery": "^3.2.1",
+    "jsdom": "^11.1.0",
+    "jsdom-global": "^3.0.2"
+  }
+}
