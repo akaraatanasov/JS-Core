@@ -2,10 +2,10 @@ let expect = require('chai').expect;
 let SortedList = require('./SortedList');
 
 describe('Sorted List Unit Tests', function () {
-   let myList;
-   beforeEach(function () {
-       myList = new SortedList();
-   });
+    let myList;
+    beforeEach(function () {
+        myList = new SortedList();
+    });
 
     describe('Test initial state', function () {
         it('add exist', function () {

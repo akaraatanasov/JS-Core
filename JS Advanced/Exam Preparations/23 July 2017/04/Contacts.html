@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts Builder</title>
+    <style>
+        article { background: #EEE; padding: 1px; width: 250px; margin: 1px; }
+        .title { background: #DDD; padding: 5px; font-weight: bold; }
+        .title button { float: right }
+        .info { margin: 5px; }
+        .info span { display: block; }
+        .online { background: #9E9; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div id="main"></div>
+<script>
+    class Contact {
+        constructor(firstName, lastName, phone, email, online = false) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.phone = phone;
+            this.email = email;
+            this.online = online;
+        }
+
+        render(id) {
+            let contactInfo = $('<article>');
+            let firstDiv = $('<div class="title">');
+            firstDiv.text(`${this.firstName} ${this.lastName}`);
+            let button = $('<button>&#8505;</button>');
+            let style = 'none';
+
+            button.on('click', function () {
+                $(this).parent().parent().children()[1].style.display = 'block';
+            });
+
+            firstDiv.append(button);
+
+            let secondDiv = $(`<div class="info" style="display: ${style};">`);
+            let phone = $(`<span>&phone; ${this.phone}</span>`);
+            let email = $(`<span>&#9993; ${this.email}</span>`);
+            secondDiv.append(phone);
+            secondDiv.append(email);
+
+            contactInfo.append(firstDiv);
+            contactInfo.append(secondDiv);
+
+            $(`#${id}`).append(contactInfo);
+        }
+
+        set online(val) {
+            this._online = val;
+
+            if (this._online === true) {
+                $('.title').addClass('title online').removeClass('title');
+            }
+        }
+    }
+</script>
+<script>
+    let contacts = [
+        new Contact("Ivan", "Ivanov", "0888 123 456", "i.ivanov@gmail.com"),
+        new Contact("Maria", "Petrova", "0899 987 654", "mar4eto@abv.bg"),
+        new Contact("Jordan", "Kirov", "0988 456 789", "jordk@gmail.com")
+    ];
+    contacts.forEach(c => c.render('main'));
+
+    // After 1 second, change the online status to true
+    setTimeout(() => contacts[1].online = true, 2000);
+</script>
+</body>
+</html>
