@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<h1>All Posts</h1>
+<button id="btnLoadPosts">Load Posts</button>
+<select id="posts"></select>
+<button id="btnViewPost">View</button>
+<h1 id="post-title">Post Details</h1>
+<ul id="post-body"></ul>
+<h2>Comments</h2>
+<ul id="post-comments"></ul>
+<script>
+    function attachEvents() {
+        const kinveyAppId = "kid_rytDEycLW";
+        const serviceUrl = "https://baas.kinvey.com/appdata/" + kinveyAppId;
+        const kinveyUsername = "Pesho";
+        const kinveyPassword = "pesho";
+        const base64auth = btoa(kinveyUsername + ":" + kinveyPassword);
+        const authHeaders = { "Authorization":"Basic " + base64auth};
+        $('#btnLoadPosts').click(loadPostsClick);
+        $('#btnViewPost').click(viewPostClick);
+
+        function loadPostsClick() {
+            let loadPostsRequest = {
+                url: serviceUrl + "/posts",
+                headers: authHeaders
+            };
+
+            $.ajax(loadPostsRequest)
+                .then(displayPosts)
+                .catch(displayError);
+
+            function displayPosts(posts) {
+                $('#posts').empty();
+
+                for(let post of posts){
+                    $('#posts').append($('<option>').text(post.title).val(post._id));
+                }
+            }
+        }
+
+        function displayError(err) {
+            let errorDiv = $("<div>").text("Error: " + err.status + ' (' + err.statusText + ')');
+            $(document.body).prepend(errorDiv);
+
+            setTimeout(function() {
+                $(errorDiv).fadeOut(function() {
+                    $(errorDiv).remove();
+                });
+            }, 3000);
+        }
+
+        function viewPostClick() {
+            let selectedPostId = $('#posts').val();
+            if(!selectedPostId){
+                return;
+            }
+
+            let requestPosts = $.ajax({
+                url: serviceUrl + "/posts/" + selectedPostId,
+                headers: authHeaders
+            });
+
+            let requestComments = $.ajax({
+                url: serviceUrl + `/comments/?query={"postId":"${selectedPostId}"}`,
+                headers: authHeaders
+            });
+
+            Promise.all([requestPosts, requestComments])
+                .then(displayPostWithComments)
+                .catch(displayError);
+
+            function displayPostWithComments([post, comments]) {
+                $('#post-title').text(post.title);
+                $('#post-body').text(post.body);
+                $('#post-comments').empty();
+
+                for (let comment of comments) {
+                    $('#post-comments').append($('<li>').text(comment.text));
+                }
+            }
+        }
+    }
+</script>
+<script>
+    attachEvents();
+</script>
+</body>
+</html>
