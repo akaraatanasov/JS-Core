@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "version": "",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-eslint": "^20.0.0"
+  }
+}
