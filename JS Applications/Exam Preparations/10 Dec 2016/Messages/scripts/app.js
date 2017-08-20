@@ -29,7 +29,7 @@ $(() => {
         $('.notification').click(function() {
             $(this).hide();
         })
-    })()
+    })();
 
     if(sessionStorage.getItem('authtoken') === null){
         userLoggedOut();
